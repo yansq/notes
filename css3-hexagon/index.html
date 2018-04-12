@@ -1,0 +1,31 @@
+<sytyle>
+  .container {
+    width: 100px;
+    margin: 20px auto 0;
+  }
+  .container div {
+    width: 100px;
+    height: 200px;
+    overflow: hidden;
+  }
+
+  .cont {
+    transform: rotateZ(60deg);
+  }
+  .inner {
+    transform: rotateZ(-120deg);
+    background: red;
+    cursor: pointer;
+  }
+  .inner:hover {
+    background: blue;
+  }
+</style>
+
+<div class="container">
+  <div class="wrapper">
+    <div class="cont">
+      <div clss="inner"></div>
+    </div>
+  </div>
+</div>
