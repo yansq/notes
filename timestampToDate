@@ -1,0 +1,35 @@
+export const USDateFormat = (timestamp, showDetail, getPiece) => {
+    const monthNames = ['January', 'February', 'March', 'April', 'May', 'June',
+        'July', 'August', 'September', 'October', 'November', 'December'
+    ];
+    const date = new Date(timestamp);
+    const month = monthNames[date.getMonth()];
+    const day = date.getDate();
+    const year = date.getFullYear();
+
+    if (showDetail) {
+        let amOrPm = 'AM';
+        let hour = date.getHours();
+        if (hour >= 12) {
+            amOrPm = 'PM';
+            hour -= 12;
+        }
+
+        let minute = '' + date.getMinutes();
+        minute = '00'.substring(0, 2 - minute.length) + minute;
+        const details = hour + ':' + minute + ' ' + amOrPm;
+
+        if (getPiece) {
+            return {
+                details,
+                month,
+                day,
+                year
+            };
+        }
+        return [details, month, day, year].join(' ');
+    }
+
+    return [month, day, year].join(' ');
+
+};
