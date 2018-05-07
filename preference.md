@@ -10,7 +10,8 @@ import apiConfig from '../.././urlConfig';
 import ajax from '../../utils/ajax.js';
 import { USDateFormat } from '../../utils/function.js';
 ```
-2. 初始化state（ES7)  
+2. 初始化state（ES7)  
+
 `state = { expanded: false }`
 
 
