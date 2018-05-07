@@ -12,7 +12,8 @@ import { USDateFormat } from '../../utils/function.js';
 ```  
 2. 初始化state（ES7)  
 
-`state = { expanded: false }`  
+`state = { expanded: false }`
+
 3. 内联样式  
 ```
 render() {
@@ -26,6 +27,11 @@ render() {
 		)
 	}
 ```
+
+4. `setState`时不依赖当前状态  
+`this.setState(prevState => ({ expanded: !prevState.expanded }))`  
+
+
 ### B
 1. classNames
 
