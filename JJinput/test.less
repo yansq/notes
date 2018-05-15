@@ -1,0 +1,35 @@
+#textArea:focus{
+	outline:none;
+}
+.box{
+	width: 500px;
+	border: 1px solid #666666;
+	transition: height 0.5s;
+	padding: 0 40px;
+	.textarea{
+		border: 0 !important;
+		width: 80%;
+	}
+
+	.checkbox{
+		width: 80%;
+		position: relative;
+		padding-left: 10px;
+		padding-top:4.5px;
+		.ant-checkbox{
+			position:absolute;
+			top: 8px;
+			left: -30px;
+		}
+		.ant-checkbox-wrapper + span, .ant-checkbox + span{
+			padding: 0 !important;
+		}
+		&:last-child{
+			white-space: normal;
+			word-wrap: break-word;
+			position: relative;
+		
+		}
+		
+	}
+}
