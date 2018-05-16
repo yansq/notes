@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
-import './test.less';
 import { Input, Checkbox } from 'antd';
+
+import './test.less';
 const { TextArea } = Input;
 
 export default class Test extends Component{
 	constructor(){
 		super();
-		this.state={
+		this.state = {
 			display: false,
 			height: 0,
 			textValue: '',
