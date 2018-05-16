@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Input, Checkbox } from 'antd';
 
 import './test.less';
+
 const { TextArea } = Input;
 
 export default class Test extends Component{
@@ -42,7 +43,7 @@ export default class Test extends Component{
 
 	render(){
 		return(
-			<div className="box"  ref={(ref) => this.refBox = ref}  style={{ height: this.state.display ? this.state.height : '200px' }}> 
+			<div className="box"  ref={(ref) => this.refBox = ref}  style={{height: this.state.display ? this.state.height : '200px'}}> 
 			    <TextArea
 			      className="textarea" 
 			      id="textArea" 
