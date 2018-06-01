@@ -19,9 +19,9 @@ div{
   color: red;
 }
 div{
-color: red;
-background-color: blue;
-width: 10px;
-height: 10px;
+  color: red;
+  background-color: blue;
+  width: 10px;
+  height: 10px;
 }
 ```
